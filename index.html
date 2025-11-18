@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoExplorer - Découvrez les Pays du Monde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🌍 GeoExplorer</div>
+        <div class="subtitle">Explorez tous les pays du monde</div>
+    </header>
+
+    <main class="main-content">
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" id="search" placeholder="Ex: France, Côte d'Ivoire, Japan...">
+                <button class="search-button" id="search-btn">
+                    <span class="btn-text">🔍 Rechercher</span>
+                    <span class="btn-loading" style="display: none;">⏳</span>
+                </button>
+            </div>
+            
+            <div class="quick-countries">
+                <button class="quick-country" data-country="france">🇫🇷 France</button>
+                <button class="quick-country" data-country="côte d'ivoire">🇨🇮 Côte d'Ivoire</button>
+                <button class="quick-country" data-country="japan">🇯🇵 Japon</button>
+                <button class="quick-country" data-country="brazil">🇧🇷 Brésil</button>
+                <button class="quick-country" data-country="egypt">🇪🇬 Égypte</button>
+                <button class="quick-country" data-country="south africa">🇿🇦 Afrique du Sud</button>
+            </div>
+        </section>
+
+        <section class="country-display" id="country-display">
+            <div class="placeholder">
+                <div class="placeholder-icon">🗺️</div>
+                <h3>Bienvenue sur GeoExplorer</h3>
+                <p>Recherchez un pays pour découvrir ses informations</p>
+                <div class="tips">
+                    <div>🌍 <strong>195 pays</strong> à découvrir</div>
+                    <div>🇫🇷 <strong>Noms français</strong> acceptés</div>
+                    <div>🔍 <strong>Recherche facile</strong> par nom ou code</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
